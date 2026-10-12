@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سامانه جامع تحلیل حقوقی و دادرسی ایران | Iran Legal System</title>
+  <meta name="description" content="مرجع جامع تحلیل حقوقی، ممیزی قراردادها، لایحه دفاعیه وکیل و انشای دادنامه قضات در نظام قوانین ایران">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      font-family: 'Vazirmatn', sans-serif !important;
+      letter-spacing: 0 !important;
+    }
+    body {
+      background-color: #090d16;
+      color: #e2e8f0;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.375rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- هدر و ناوبری -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-800 bg-opacity-90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white font-black text-lg">
+          ق
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white block leading-tight">سامانه حقوقی ایران</span>
+          <span class="text-xs text-slate-400 block">Iran Legal System Engine</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/m4tinbeigi-official/iran-legal-system" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700 transition">
+          مشاهده در گیت‌هاب
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- هیرو و معرفی -->
+  <section class="relative py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/80 border border-blue-800/60 text-blue-400 text-xs mb-6 font-medium">
+      نسخه ۲.۰ • موتور دوگانه وکیل مدافع و قاضی دادگاه
+    </div>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+      دایره‌المعارف و ممیزی جامع قوانین جمهوری اسلامی ایران
+    </h1>
+    <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed mb-8">
+      موتور تحلیل حقوقی، ممیزی قراردادها، پیش‌بینی آرای محاکم و بازطراحی بندهای پرخطر بر پایه قوانین موضوعه، آرای وحدت رویه دیوان عالی و استانداردهای پلیس فتا.
+    </p>
+    
+    <!-- کادرهای آمار شاخه‌ها -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto">
+      <div class="glass-card p-4 rounded-xl text-start">
+        <span class="text-xs text-slate-400 block mb-1">کدهای اصلی</span>
+        <span class="text-lg font-bold text-white block">مدنی، تجارت، جزا</span>
+        <span class="text-[11px] text-blue-400 block mt-1">مواد ۱۹۰، ۱۰، ۱، ۶۷۴</span>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-start">
+        <span class="text-xs text-slate-400 block mb-1">فناوری و سایبر</span>
+        <span class="text-lg font-bold text-white block">جرایم رایانه‌ای و فتا</span>
+        <span class="text-[11px] text-emerald-400 block mt-1">لاگ ۶ ماهه و فارنزیک</span>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-start">
+        <span class="text-xs text-slate-400 block mb-1">رویه قضایی</span>
+        <span class="text-lg font-bold text-white block">وحدت رویه دیوان عالی</span>
+        <span class="text-[11px] text-amber-400 block mt-1">آرای ۷۳۳، ۸۰۵، ۸۱۱</span>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-start">
+        <span class="text-xs text-slate-400 block mb-1">ارتباطات و رسانه</span>
+        <span class="text-lg font-bold text-white block">سیم‌کارت و شبکه‌ها</span>
+        <span class="text-[11px] text-purple-400 block mt-1">سلب امتیاز و توقیف</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- بخش جستجو و فیلتر قوانین -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-12">
+    <div class="glass-card p-6 rounded-2xl border border-slate-800">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-white mb-1">جستجو در مواد قانونی و آرای وحدت رویه</h2>
+          <p class="text-xs text-slate-400">جستجوی موضوعی در مواد مدنی، کیفری، تجاری، سایبری و ضوابط فتا</p>
+        </div>
+        <div class="w-full md:w-80">
+          <input type="text" id="search-input" placeholder="مثال: وجه التزام، کلاهبرداری، فتا، چک..." 
+                 class="w-full px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition">
+        </div>
+      </div>
+
+      <!-- تب‌های دسته‌بندی -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 border-b border-slate-800 text-xs" id="category-tabs">
+        <button onclick="filterCategory('all')" class="cat-btn px-3 py-1.5 rounded-md bg-blue-600 text-white font-medium">همه حوزه‌ها</button>
+        <button onclick="filterCategory('civil')" class="cat-btn px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300">حقوق مدنی و قراردادها</button>
+        <button onclick="filterCategory('commercial')" class="cat-btn px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300">تجارت، شرکت‌ها و چک</button>
+        <button onclick="filterCategory('cyber')" class="cat-btn px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300">جرایم رایانه‌ای و فتا</button>
+        <button onclick="filterCategory('sim_social')" class="cat-btn px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300">سیم‌کارت و سوشال مدیا</button>
+        <button onclick="filterCategory('precedents')" class="cat-btn px-3 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300">آرای وحدت رویه</button>
+      </div>
+
+      <!-- فهرست قوانین و کارت‌ها -->
+      <div id="statutes-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+        <!-- آیتم‌ها توسط جاوااسکریپت پر می‌شوند -->
+      </div>
+    </div>
+  </section>
+
+  <!-- بخش شبیه‌ساز پرونده (Dual-Engine Live Demo) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mb-16">
+    <div class="glass-card p-6 sm:p-8 rounded-2xl border border-blue-900/40 relative overflow-hidden">
+      <div class="max-w-2xl mb-6">
+        <span class="badge bg-blue-600/20 text-blue-400 border border-blue-500/30 mb-2">شبیه‌ساز زنده دادرسی</span>
+        <h2 class="text-2xl font-bold text-white mb-2">تحلیل سریع پرونده به سبک وکیل و قاضی</h2>
+        <p class="text-xs sm:text-sm text-slate-400">یک سناریو، معامله یا ادعا را وارد کنید یا یکی از نمونه‌ها را انتخاب کنید تا چارچوب تحلیل ۴ مرحله‌ای اجرا شود.</p>
+      </div>
+
+      <!-- نمونه‌های سریع -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button onclick="setScenario(1)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+          نمونه ۱: عدم تحویل کالا در آنلاین شاپ و شکایت کلاهبرداری
+        </button>
+        <button onclick="setScenario(2)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+          نمونه ۲: مسدودی سیم‌کارت و سلب امتیاز اکانت تلگرام
+        </button>
+        <button onclick="setScenario(3)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+          نمونه ۳: وجه التزام روزانه سنگین در قرارداد نرم‌افزاری
+        </button>
+      </div>
+
+      <div class="mb-4">
+        <textarea id="case-input" rows="3" placeholder="متن سناریو، قرارداد یا ادعای خود را اینجا بنویسید..." 
+                  class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500 transition"></textarea>
+      </div>
+
+      <button onclick="simulateCase()" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition shadow-lg shadow-blue-600/20">
+        اجرای ممیزی حقوقی و صدور رأی فرضی
+      </button>
+
+      <!-- پنل خروجی شبیه‌سازی -->
+      <div id="simulation-output" class="mt-6 hidden grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-blue-400">۱. لایحه دفاعیه وکیل مدافع</span>
+            <span class="badge bg-blue-900/30 text-blue-300 text-[10px]">استراتژی دفاع</span>
+          </div>
+          <div id="attorney-box" class="text-xs text-slate-300 leading-relaxed whitespace-pre-line space-y-2"></div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-emerald-400">۲. دادنامه و رأی قاضی دادگاه</span>
+            <span class="badge bg-emerald-900/30 text-emerald-300 text-[10px]">حکم ماهوی</span>
+          </div>
+          <div id="judge-box" class="text-xs text-slate-300 leading-relaxed whitespace-pre-line space-y-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer class="mt-auto glass-card border-t border-slate-800 py-8 px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div>
+        سامانه جامع تحلیل حقوقی ایران • طراحی شده بر مبنای استانداردهای وایب‌فارسی و نظام حقوقی ایران
+      </div>
+      <div>
+        مخزن گیت‌هاب: <a href="https://github.com/m4tinbeigi-official/iran-legal-system" class="text-blue-400 hover:underline">iran-legal-system</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const STATUTES_DATA = [
+      {
+        id: 1,
+        category: 'civil',
+        title: 'ماده ۱۰ قانون مدنی',
+        tag: 'اصل آزادی اراده',
+        desc: 'قراردادهای خصوصی نسبت به کسانی که آن را منعقد نموده‌اند در صورتی که مخالف صریح قانون نباشد نافذ است.',
+        articles: 'ماده ۱۰، ماده ۹۷۵ (نظم عمومی)'
+      },
+      {
+        id: 2,
+        category: 'civil',
+        title: 'ماده ۱۹۰ قانون مدنی',
+        tag: 'ارکان صحت معامله',
+        desc: 'چهار شرط بنیادین صحت عقد: قصد طرفین و رضای آن‌ها، اهلیت طرفین، موضوع معین، و مشروعیت جهت معامله.',
+        articles: 'مواد ۱۹۰ تا ۲۱۸ مدنی'
+      },
+      {
+        id: 3,
+        category: 'civil',
+        title: 'ماده ۲۳۰ قانون مدنی و وجه التزام',
+        tag: 'خسارت قراردادی',
+        desc: 'اگر در ضمن معامله شرط شده باشد که در صورت تخلف متخلف مبلغی تادیه نماید حاکم نمی‌تواند او را به بیشتر یا کمتر محکوم کند.',
+        articles: 'ماده ۲۳۰ مدنی و رأی وحدت رویه ۸۰۵'
+      },
+      {
+        id: 4,
+        category: 'commercial',
+        title: 'ماده ۲۳ قانون صدور چک',
+        tag: 'اجراییه مستقیم',
+        desc: 'دارنده چک صیادی می‌تواند از دادگاه مستقیماً تقاضای صدور اجراییه نماید بدون نیاز به تقدیم دادخواست ماهوی و پرداخت هزینه دادرسی دعاوی مالی.',
+        articles: 'قانون جدید چک اصلاحی ۱۳۹۷ و ۱۴۰۰'
+      },
+      {
+        id: 5,
+        category: 'commercial',
+        title: 'لایحه اصلاحی قانون تجارت ۱۳۴۷',
+        tag: 'مسئولیت مدیران',
+        desc: 'مواد ۱۱۸ و ۱۲۹: معاملات مدیران با شرکت و مسئولیت تضامنی در قبال تخلف از اساسنامه و اضرار به سهامداران.',
+        articles: 'مواد ۱۱۸، ۱۲۴، ۱۲۹ و ۱۴۲'
+      },
+      {
+        id: 6,
+        category: 'cyber',
+        title: 'مواد ۱ تا ۳ قانون جرایم رایانه‌ای',
+        tag: 'دسترسی غیرمجاز',
+        desc: 'هرکس به طور غیرمجاز به داده‌ها یا سامانه‌های رایانه‌ای یا مخابراتی حفاظت‌شده دسترسی یابد به حبس یا جزای نقدی محکوم می‌شود.',
+        articles: 'ماده ۱، ۲ و ۳ جرایم رایانه‌ای'
+      },
+      {
+        id: 7,
+        category: 'cyber',
+        title: 'ماده ۱۳ قانون جرایم رایانه‌ای',
+        tag: 'کلاهبرداری اینترنتی',
+        desc: 'تحصیل مال، وجه یا امتیاز از طریق ورود، تغییر، محو، ایجاد یا متوقف کردن داده‌ها یا سامانه‌ها در فضای مجازی.',
+        articles: 'ماده ۱۳ ق.ج.ر'
+      },
+      {
+        id: 8,
+        category: 'cyber',
+        title: 'الزام ۶ ماهه لاگ‌ها و ضوابط فتا',
+        tag: 'پلیس فتا و ISPها',
+        desc: 'مواد ۳۲ و ۳۳: ارائه‌دهندگان خدمات موظف به نگهداری داده‌های ترافیک (IP، پورت، زمان، حجم) حداقل به مدت ۶ ماه هستند.',
+        articles: 'مواد ۳۲، ۳۳ و دستورالعمل فتا'
+      },
+      {
+        id: 9,
+        category: 'sim_social',
+        title: 'مصوبه ۱۶۶ رگولاتوری (سلب امتیاز)',
+        tag: 'سیم‌کارت‌های خاموش',
+        desc: 'سلب امتیاز و بازفروش سیم‌کارت‌های اعتباری پس از ۹۰ روز عدم تراکنش، و ریسک‌های نفوذ به اکانت‌های تلگرام و بانکی.',
+        articles: 'مصوبه کمیسیون تنظیم مقررات ارتباطات'
+      },
+      {
+        id: 10,
+        category: 'sim_social',
+        title: 'مسئولیت ادمین‌ها در شبکه‌های اجتماعی',
+        tag: 'تبصره ۷ و ۲۳ جرایم رایانه‌ای',
+        desc: 'مدیران کانال‌ها و گروه‌ها در صورت حذف فوری محتوای مجرمانه پس از رویت، از مسئولیت معاونت در جرم معاف هستند.',
+        articles: 'تبصره ماده ۷ و ماده ۲۳ ق.ج.ر'
+      },
+      {
+        id: 11,
+        category: 'precedents',
+        title: 'رأی وحدت رویه ۸۱۱ و ۷۳۳',
+        tag: 'قیمت روز ملک در بطلان',
+        desc: 'در معاملات باطل یا مال غیر (مستحق‌للغیر)، خریدار جاهل مستحق دریافت ارزش واقعی روز مبیع به نرخ کارشناسی است نه صرف تورم بانکی.',
+        articles: 'رأی ۸۱۱ (۱۴۰۰) و رأی ۷۳۳ (۱۳۹۳)'
+      },
+      {
+        id: 12,
+        category: 'precedents',
+        title: 'رأی وحدت رویه ۸۰۵',
+        tag: 'وجه التزام بیش از تورم',
+        desc: 'تعیین وجه التزام قراردادی به میزان بیش از نرخ تورم در قراردادهای خصوصی نافذ است و دادگاه حق تعدیل آن را ندارد.',
+        articles: 'رأی وحدت رویه ۸۰۵ دیوان عالی'
+      }
+    ];
+
+    let currentCategory = 'all';
+
+    function renderStatutes(filterText = '') {
+      const container = document.getElementById('statutes-container');
+      const filtered = STATUTES_DATA.filter(item => {
+        const matchCategory = (currentCategory === 'all' || item.category === currentCategory);
+        const matchSearch = filterText === '' || 
+          item.title.includes(filterText) || 
+          item.desc.includes(filterText) || 
+          item.tag.includes(filterText);
+        return matchCategory && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<div class="col-span-full py-8 text-center text-slate-500 text-xs">موردی با این عبارت یافت نشد.</div>';
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => `
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="badge bg-slate-800 text-slate-300">${item.tag}</span>
+              <span class="text-[10px] text-slate-500">${item.articles}</span>
+            </div>
+            <h3 class="font-bold text-sm text-white mb-1.5">${item.title}</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">${item.desc}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+      event.target.classList.add('bg-blue-600', 'text-white');
+      renderStatutes(document.getElementById('search-input').value);
+    }
+
+    document.getElementById('search-input').addEventListener('input', (e) => {
+      renderStatutes(e.target.value);
+    });
+
+    function setScenario(type) {
+      const input = document.getElementById('case-input');
+      if (type === 1) {
+        input.value = "مشتری از آنلاین‌شاپ به دلیل تاخیر در ارسال کالا تحت عنوان کلاهبرداری اینترنتی شکایت کرده و تقاضای انسداد حساب بانکی دارد.";
+      } else if (type === 2) {
+        input.value = "سیم‌کارت قدیمی به دلیل ۹۰ روز عدم استفاده سلب امتیاز شده و خریدار جدید وارد تلگرام قبلی شده و اقدام به پیام دادن به مخاطبان کرده است.";
+      } else if (type === 3) {
+        input.value = "در قرارداد توسعه نرم‌افزار شرط شده هر روز تاخیر ۱۰ میلیون تومان جریمه داشته باشد که از کل مبلغ قرارداد بیشتر شده است.";
+      }
+    }
+
+    function simulateCase() {
+      const text = document.getElementById('case-input').value.trim();
+      if (!text) return;
+
+      const output = document.getElementById('simulation-output');
+      const attorneyBox = document.getElementById('attorney-box');
+      const judgeBox = document.getElementById('judge-box');
+
+      output.classList.remove('hidden');
+
+      if (text.includes("کلاهبرداری") || text.includes("آنلاین‌شاپ")) {
+        attorneyBox.innerHTML = `• ایراد به عنوان اتهامی: صرف تاخیر در تحویل مبیع فاقد رکن مادی کلاهبرداری (مانور متقلبانه) است و صرفاً نقض عهد مدنی است.
+• استناد به اصل ۳۷ قانون اساسی (اصل برائت) و فقدان سوءنیت خاص مجرمانه.
+• ارائه فاکتور، لاگ ثبت سفارش و پیشنهاد تحویل کالا یا استرداد وجه برای اثبات حسن‌نیت.
+• تقاضای صدور قرار منع تعقیب کیفری و هدایت شاکی به محاکم حقوقی.`;
+
+        judgeBox.innerHTML = `• گردش‌کار: شاکی مدعی کلاهبرداری اینترنتی شده، اما مشتکی‌عنه دارای پروانه و درگاه رسمی بوده و عملیات فریب محرز نیست.
+• مبانی رأی: عدم انطباق با ماده ۱۳ قانون جرایم رایانه‌ای و ماده ۱ تشدید به دلیل فقدان تقلب بنیادین.
+• منطوق دادنامه: مستنداً به ماده ۴ و ۲۶۵ قانون آیین دادرسی کیفری و اصل برائت، قرار منع تعقیب متهم صادر می‌گردد. شاکی در خصوص خسارت به محاکم عمومی حقوقی هدایت می‌شود.`;
+      } else if (text.includes("سیم‌کارت") || text.includes("تلگرام")) {
+        attorneyBox.innerHTML = `• خریدار جدید خط حق ورود به داده‌های شخصی مالک سابق را نداشته و ورود به اکانت تلگرام مصداق بارز ماده ۱ قانون جرایم رایانه‌ای (دسترسی غیرمجاز) است.
+• تقاضای استعلام لاگ‌های ورود از طریق پلیس فتا و ردیابی تجهیزات و شناسه کاربری جدید.
+• اثبات مالکیت سابق با ارائه اسناد پوکه خط و استعلام سوابق اپراتور.`;
+
+        judgeBox.innerHTML = `• گردش‌کار: استفاده از سرشماره سلب امتیاز شده مجوزی برای نقض حریم داده‌های الکترونیکی اشخاص محسوب نمی‌گردد.
+• تطبیق مواد: انطباق کامل با ماده ۱ و ماده ۱۶ جرایم رایانه‌ای در خصوص دسترسی و افشای اسرار خصوصی.
+• حکم دادگاه: محکومیت وارد شونده غیرمجاز به جزای نقدی و الزام به امحا و خروج کامل از حساب کاربری متعلق به غیر.`;
+      } else {
+        attorneyBox.innerHTML = `• ایراد به غیرمنصفانه بودن وجه التزام و استناد به قاعده لاضرر و عدم تطابق خسارت با اصل تعهد.
+• اثبات وقوع فورس‌ماژور (قوه قاهره مواد ۲۲۷ و ۲۲۹ قانون مدنی) در تحویل به دلیل قطعی اینترنت یا شرایط پیش‌بینی‌نشده.
+• تقاضای کارشناسی جهت تفکیک تاخیرات مجاز ناشی از عدم همکاری کارفرما.`;
+
+        judgeBox.innerHTML = `• گردش‌کار: طرفین بر مبنای ماده ۱۰ و ۲۳۰ قانون مدنی توافق قطعی نموده‌اند.
+• تطبیق با وحدت رویه ۸۰۵ دیوان عالی کشور: وجه التزام قراردادی در عقود غیربانکی الزام‌آور است مگر مواردی که تاخیر منتسب به کارفرما یا فورس‌ماژور احراز گردد.
+• حکم: کسر تاخیرات موجه با نظر کارشناس و محکومیت به پرداخت الباقی وجه التزام مقرر.`;
+      }
+    }
+
+    renderStatutes();
+  </script>
+</body>
+</html>
